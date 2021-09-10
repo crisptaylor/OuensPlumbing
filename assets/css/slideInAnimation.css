@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body{
+    overflow-x: hidden;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+.fade-in.appear{
+    opacity:1;
+}
+.from-right{
+    opacity:0;
+    transform: translateX(-50%);
+
+}
+.from-left{
+    opacity:0;
+transform:translateX(50%);
+
+}
+.from-left,
+.from-right{
+    transition: opacity 300ms ease-in, 600ms ease-in;
+    
+}
+.from-left.appear,
+.from-right.appear{
+    opacity: 1;
+    transform: translateX(0);
+}
