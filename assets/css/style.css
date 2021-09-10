@@ -10910,6 +10910,11 @@ textarea.form-control-lg {
   overflow: hidden;
   border-radius: 0 0 15% 15%;
 }
+@media (max-width: 575.98px) {
+  .intro-section {
+    padding-top: 170px;
+  }
+}
 
 .gradient {
   background: linear-gradient(to right, rgba(105, 48, 195, 0.95), rgba(244, 96, 54, 0.95));
@@ -10927,10 +10932,12 @@ textarea.form-control-lg {
 .intros .video-box a span i {
   font-size: 6rem;
   color: #DBF9F0;
+  transition: transform 300ms ease;
 }
-.intros .video-box a span i:hover {
+.intros .video-box a span i i:hover {
+  transform: scale(1.2);
   font-size: 6rem;
-  color: rgba(233, 236, 239, 0.9);
+  color: rgba(27, 153, 139, 0.9);
 }
 
 .bgprimary {
@@ -10952,12 +10959,20 @@ textarea.form-control-lg {
   border: 0.55rem solid #e9ecef;
   border-radius: 50%;
   animation: pulse-border 2s linear infinite;
+  transition: all 250ms ease;
 }
 .borderanimation--border-1 {
   animation-delay: 1s;
 }
 .borderanimation--border-2 {
   animation-delay: 2.1s;
+}
+
+.borderanimation:hover--border-1 {
+  transform: scale(1.1);
+}
+.borderanimation:hover--border-1 {
+  transform: scale(1.2);
 }
 
 .submitbuttons {
